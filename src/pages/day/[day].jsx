@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import { prisma } from '../../../server/db/client'
 import { Card } from '../../../components/Card'
+import Link from 'next/link';
 import Form from '../../../components/Form'
 import Button from '../../../components/Button'
 
@@ -20,7 +21,9 @@ export default function Day ({kelas}){
                 <Card namaKelas={item.nama_kelas} jamMulai={item.jam_mulai} jamSelesai={item.jam_selesai}></Card>
               ))}
               <div className="flex items-end mt-10">
-            <a href="/"><Button content={"Back to Home"}></Button></a>
+                <Link href="/">
+            <Button content={"Back to Home"}></Button>
+            </Link>
             </div>
             </div>
        
