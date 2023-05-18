@@ -17,8 +17,8 @@ export default function Day ({kelas}){
           <h1 className='text-3xl' >Kelas Kosong Hari {day}</h1>
           <div className='flex justify-center'>
             <div className=" flex gap-7 flex-wrap justify-start mt-5 mb-5" >
-              {kelas.map((item) => (
-                <Card namaKelas={item.nama_kelas} jamMulai={item.jam_mulai} jamSelesai={item.jam_selesai}></Card>
+              {kelas.map((item,index) => (
+                <Card key={index} namaKelas={item.nama_kelas} jamMulai={item.jam_mulai} jamSelesai={item.jam_selesai}></Card>
               ))}
               <div className="flex items-end mt-10">
                 <Link href="/">
