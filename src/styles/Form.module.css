@@ -13,6 +13,7 @@
     --bg-color: #fff;
     --main-color: #323232;
     width: 100%;
+    flex-direction: column;
 }
 
 .input {
@@ -27,6 +28,13 @@
     color: var(--font-color);
     padding: 5px 10px;
     outline: none;
+  }
+
+  @media only screen and (max-width: 750px ) {
+    .input {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
   }
 
   .input::placeholder {

@@ -16,7 +16,7 @@ export default function Home() {
         <p className="mt-1 text-gray-600 dark:text-gray-400">Isikan opsi dibawah untuk mencari kelas kosong.</p>
       </div>
    
-      <div className="h-1/4 p-5 flex items-center justify-between rounded-md" style={{backgroundColor:"#E7EFF8"}}>
+      <div className="p-5 flex items-center justify-between rounded-md min-h-1/4" style={{backgroundColor:"#E7EFF8"}}>
         <Form></Form>
       </div>
       {/* <Card></Card> */}

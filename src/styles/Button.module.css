@@ -8,6 +8,7 @@
     border: none;
     border-radius: var(--button_radius);
     background: var(--button_outline_color);
+    height: fit-content;
   }
   
   .button_top {

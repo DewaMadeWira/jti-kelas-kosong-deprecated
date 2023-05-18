@@ -4,7 +4,7 @@ export default function Form(){
     return(
         <form method='post' action='/api/dayPost' className={styles.form}>
           <label htmlFor="hs-select-label" className="block font-medium mb-2 text-2xl text-black">Hari</label>
-          <div className='flex flex-grow justify-between items-center py-3 w-full' >
+          <div className='flex md:flex-grow md:justify-between md:items-center py-3 w-full flex-col sm:flex-row' >
             <select defaultValue="Senin" id="hs-select-label" className={styles.input} name='day'>
               <option value="Senin" >Senin</option>
               <option value="Selasa">Selasa</option>
